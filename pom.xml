@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                org.unibl.etf.pj2.granicniprelaz.granicniprelaz/org.unibl.etf.pj2.granicniprelaz.granicniprelaz.HelloApplication
+                                org.unibl.etf.pj2.granicniprelaz.granicniprelaz/org.unibl.etf.pj.granicniprelaz.controllers.StartApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

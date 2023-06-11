@@ -1,9 +1,9 @@
-package org.unibl.etf.pj2.granicniprelaz.granicniprelaz;
+package org.unibl.etf.pj.granicniprelaz.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class SimulationController {
     @FXML
     private Label welcomeText;
 
