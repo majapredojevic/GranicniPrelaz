@@ -1,5 +1,7 @@
 package org.unibl.etf.pj.granicniprelaz.util;
 
+import org.unibl.etf.pj.granicniprelaz.simulation.Simulation;
+
 import java.io.File;
 import java.io.IOException;
 import java.time.LocalDateTime;
@@ -22,5 +24,8 @@ public abstract class SimulationLogger {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
+    }
+    public static void logAsync(Class<?> C, Exception exception) {
+        new Thread(() -> SimulationLogger.log(C,Level.SEVERE,exception.getMessage(), exception)).start();
     }
 }

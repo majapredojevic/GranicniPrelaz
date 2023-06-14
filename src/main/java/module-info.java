@@ -2,8 +2,7 @@ module org.unibl.etf.pj.granicniprelaz {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.logging;
-
-
+    requires json.simple;
 
 
     exports org.unibl.etf.pj.granicniprelaz.exception;
