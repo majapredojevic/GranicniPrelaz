@@ -44,7 +44,6 @@ public class PathJsonParser  {
         } catch (IOException | ParseException exception) {
             throw new MapLoadingException();
         }
-
         return pathOnMap;
 
     }

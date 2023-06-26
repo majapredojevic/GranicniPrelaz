@@ -22,21 +22,9 @@
                 </Label>
             </children>
         </HBox>
-        <VBox alignment="CENTER" fillWidth="false" layoutX="-2.0" layoutY="55.0" maxWidth="-Infinity" prefHeight="343.0" prefWidth="452.0">
+        <VBox alignment="CENTER" layoutX="-2.0" layoutY="55.0" maxWidth="-Infinity" prefHeight="343.0" prefWidth="452.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0">
             <children>
-                <HBox alignment="CENTER" prefWidth="450.0">
-                    <children>
-                        <Label fx:id="lblFigureInfo" alignment="CENTER" contentDisplay="CENTER" text="Label" textAlignment="JUSTIFY">
-                            <font>
-                                <Font name="System Italic" size="18.0" />
-                            </font>
-                            <HBox.margin>
-                                <Insets bottom="5.0" top="10.0" />
-                            </HBox.margin>
-                        </Label>
-                    </children>
-                </HBox>
-                <GridPane fx:id="gpFigurePath" alignment="CENTER">
+                <GridPane fx:id="gpColumnOfVehicles" alignment="TOP_CENTER">
                 </GridPane>
             </children>
         </VBox>

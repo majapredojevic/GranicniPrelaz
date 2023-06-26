@@ -14,31 +14,26 @@ public class TimeCounter extends Thread {
     @Override
     public void run() {
 
-//        while(!SimulationController.simulationFinished) {
-//
-//            synchronized (Simulation.queue) {
-//                if (SimulationController.simulationPaused) {
-//                    try {
-//                        Simulation.queue.wait();
-//                    } catch (InterruptedException exception) {
-//                        SimulationLogger.log(getClass(), Level.SEVERE, exception.getMessage(), exception);
-//                    }
-//
-//                }
-//            }
+        while(!SimulationController.simulationFinished) {
+            synchronized (Simulation.pathWithTerminals) {
+                if (SimulationController.simulationPaused) {
+                    try {
+                        Simulation.pathWithTerminals.wait();
+                    } catch (InterruptedException exception) {
+                        SimulationLogger.log(getClass(), Level.SEVERE, exception.getMessage(), exception);
+                }
 
+                }
+            }
             StartApplication.simulationController.setTimeLabel(time);
-
-
             try {
                 Thread.sleep(Constants.WAITING_TIME);
             } catch (InterruptedException exception) {
                 SimulationLogger.log(getClass(), Level.SEVERE,exception.getMessage(),exception);
             }
-
             time++;
         }
-//    }
+    }
 
     public int getTime() {
         return time;

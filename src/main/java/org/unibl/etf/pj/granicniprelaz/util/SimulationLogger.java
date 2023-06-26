@@ -25,7 +25,8 @@ public abstract class SimulationLogger {
             ex.printStackTrace();
         }
     }
+
     public static void logAsync(Class<?> C, Exception exception) {
-        new Thread(() -> SimulationLogger.log(C,Level.SEVERE,exception.getMessage(), exception)).start();
+        new Thread(() -> SimulationLogger.log(C, Level.SEVERE, exception.getMessage(), exception)).start();
     }
 }

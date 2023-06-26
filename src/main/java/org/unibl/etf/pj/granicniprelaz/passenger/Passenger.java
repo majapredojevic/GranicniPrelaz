@@ -1,16 +1,18 @@
 package org.unibl.etf.pj.granicniprelaz.passenger;
+public class Passenger extends Person {
+    private final String vehicleName;
 
-import java.io.Serializable;
-
-
-public class Passenger extends Person implements Serializable {
-    public Passenger(String name) {
+    public Passenger(String name, String vehicleName) {
         super(name);
+        this.vehicleName = vehicleName;
+    }
 
+    public String getVehicleName() {
+        return vehicleName;
     }
 
     @Override
     public String toString() {
-        return "Putnik: " + super.toString();
+        return "[Putnik] " + super.toString();
     }
 }

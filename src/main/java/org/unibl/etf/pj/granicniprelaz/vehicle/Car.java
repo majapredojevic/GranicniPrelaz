@@ -12,12 +12,12 @@ public class Car extends Vehicle {
 
     public Car() {
         super("V"+ ID);
-        this.driver = new Driver("Vozač V" + ID);
+        this.driver = new Driver("Vozač V" + ID, super.getVehicleName());
         this.passengers = new ArrayList<>();
         Random rand = new Random();
         int numberOfPassengers = rand.nextInt(Constants.MAX_NUM_OF_PASSENGERS_IN_CAR);
         for(int i = 0; i< numberOfPassengers; i++) {
-            Passenger passenger = new Passenger("Putnik" + (i+1) + " V" + ID);
+            Passenger passenger = new Passenger("Putnik" + (i+1) + " V" + ID, this.getVehicleName());
             this.passengers.add(passenger);
         }
         ID++;
@@ -26,7 +26,7 @@ public class Car extends Vehicle {
 
     @Override
     public String toString() {
-        return "Automobil: " + super.toString();
+        return "[Automobil]\n" + super.toString();
     }
 }
 

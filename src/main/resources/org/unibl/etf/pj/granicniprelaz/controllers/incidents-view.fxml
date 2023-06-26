@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.pj.granicniprelaz.controllers.IncidentsController">
+    <children>
+      <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="TOP_CENTER" style="-fx-background-color: #00308f;">
+               <children>
+                      <Label alignment="CENTER" contentDisplay="CENTER" minWidth="-Infinity" prefHeight="55.0" prefWidth="800.0" style="-fx-background-color: #00308f;" text="Registrovani prekršaji" textAlignment="CENTER" textFill="WHITE">
+                          <font>
+                              <Font name="System Bold Italic" size="24.0" />
+                          </font>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <TabPane maxHeight="1.7976931348623157E308" prefHeight="453.0" prefWidth="702.0" style="-fx-background-color: white;" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="NEVER">
+              <tabs>
+                <Tab text="Policijska evidencija">
+                     <content>
+                        <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;">
+                           <children>
+                                <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" minWidth="-Infinity" opacity="0.75" prefHeight="432.0" prefWidth="232.0" HBox.hgrow="NEVER">
+                                    <children>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="185.0" text="Fajlovi: " textFill="#00308f" VBox.vgrow="ALWAYS">
+                                            <font>
+                                                <Font name="System Bold Italic" size="18.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets top="5.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                        <ListView id="lvFiles" fx:id="lvPunishedPersonsFilesList" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#onListViewPunishedPersonsItemClicked" prefHeight="400.0" prefWidth="230.0" style="-fx-border-color: transparent;" styleClass="list-cell" stylesheets="@style.css" VBox.vgrow="ALWAYS">
+                                            <VBox.margin>
+                                                <Insets />
+                                            </VBox.margin>
+                                        </ListView>                                    </children>
+                                </VBox>
+                              <ScrollPane fitToWidth="true" hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" prefWidth="568.0" style="-fx-background-color: white;" vbarPolicy="ALWAYS">
+                                 <content>
+                                    <Label fx:id="lblListOfPunishedPersons" accessibleRole="PARENT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" style="-fx-background-color: transparent;">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </HBox>
+                     </content>
+                </Tab>
+                  <Tab text="Carinska evidencija">
+                     <content>
+                        <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;">
+                           <children>
+                              <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" minWidth="-Infinity" opacity="0.75" prefHeight="432.0" prefWidth="232.0" style="-fx-background-color: white;" HBox.hgrow="NEVER">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="185.0" text="Fajlovi: " textFill="#00308f" VBox.vgrow="ALWAYS">
+                                       <font>
+                                          <Font name="System Bold Italic" size="18.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <ListView id="lvFiles" fx:id="lvCustomsFilesList" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#onListViewCustomsFilesItemClicked" prefHeight="400.0" prefWidth="230.0" style="-fx-border-color: transparent;" styleClass="list-cell" stylesheets="@style.css" VBox.vgrow="ALWAYS">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </ListView>
+                                 </children>
+                              </VBox>
+                              <ScrollPane fitToWidth="true" hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" prefWidth="568.0" style="-fx-background-color: white;" vbarPolicy="ALWAYS">
+                                 <content>
+                                    <Label fx:id="lblCustomsInfo" accessibleRole="LIST_VIEW" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-background-color: transparent;">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </HBox>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>

@@ -4,38 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="559f405b-fd21-45d8-af22-07983c27ca0b" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/constants/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/controllers/ColumnOfVehiclesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/exception/MapLoadingException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/gadgets/CustomsDocument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/gadgets/IdentificationDocument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/gadgets/Suitcase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/json/Field.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/json/PathJsonParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/map/Field.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/map/PathOnMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/passenger/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/passenger/Passenger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/passenger/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/simulation/Simulation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/terminal/CustomsTerminal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/terminal/PoliceTerminal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/terminal/Terminal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/util/TimeCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/vehicle/Bus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/vehicle/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/vehicle/PositionEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/vehicle/Truck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/vehicle/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/org/unibl/etf/pj/granicniprelaz/controllers/column-of-vehicles-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="559f405b-fd21-45d8-af22-07983c27ca0b" name="Changes" comment="Second commit">
+      <change afterPath="$PROJECT_DIR$/res/json/path.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/terminals/StatusiTerminala.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/controllers/IncidentsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/controllers/VehicleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/incident/IncidentUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/incident/ListOfPunishedPersons.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/terminal/CustomsTerminalForTrucks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/terminal/PoliceTerminalForTrucks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/util/TerminalWatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/unibl/etf/pj/granicniprelaz/controllers/incidents-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/unibl/etf/pj/granicniprelaz/controllers/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/unibl/etf/pj/granicniprelaz/controllers/vehicle-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/constants/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/controllers/ColumnOfVehiclesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/controllers/ColumnOfVehiclesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/controllers/SimulationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/controllers/SimulationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/controllers/StartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/controllers/StartApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/gadgets/CustomsDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/gadgets/CustomsDocumentation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/gadgets/IdentificationDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/gadgets/IdentificationDocument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/gadgets/Suitcase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/gadgets/Suitcase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/json/Field.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/json/PathJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/json/PathJsonParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/map/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/map/Field.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/map/PathOnMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/map/PathOnMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/passenger/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/passenger/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/passenger/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/passenger/Passenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/passenger/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/passenger/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/simulation/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/simulation/Simulation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/terminal/CustomsTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/terminal/CustomsTerminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/terminal/PoliceTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/terminal/PoliceTerminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/terminal/Terminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/terminal/Terminal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/util/SimulationLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/util/SimulationLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/util/TimeCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/util/TimeCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/util/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/util/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/vehicle/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/vehicle/Bus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/vehicle/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/vehicle/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/vehicle/PositionEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/vehicle/PositionEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/vehicle/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/vehicle/Truck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/vehicle/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/unibl/etf/pj/granicniprelaz/vehicle/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/unibl/etf/pj/granicniprelaz/controllers/column-of-vehicles-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/unibl/etf/pj/granicniprelaz/controllers/column-of-vehicles-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/org/unibl/etf/pj/granicniprelaz/controllers/simulation-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/unibl/etf/pj/granicniprelaz/controllers/simulation-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +57,7 @@
         <option value="Enum" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -66,28 +75,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_directory_selection": "C:/Users/user/IdeaProjects/GranicniPrelaz/src/main/java/org/unibl/etf/pj/granicniprelaz/controllers",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/user/IdeaProjects/GranicniPrelaz/src/main/java/org/unibl/etf/pj/granicniprelaz/controllers&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.unibl.etf.pj.granicniprelaz.controllers" />
       <recent name="org.unibl.etf.pj.granicniprelaz.json" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\user\IdeaProjects\GranicniPrelaz\src\main\resources\org\unibl\etf\pj\granicniprelaz\controllers\images" />
       <recent name="C:\Users\user\IdeaProjects\GranicniPrelaz\src\main\resources\org\unibl\etf\pj\granicniprelaz\controllers" />
+      <recent name="C:\Users\user\IdeaProjects\GranicniPrelaz\src\main\resources\org\unibl\etf\pj\granicniprelaz\controllers\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -112,7 +124,22 @@
       <workItem from="1686605495256" duration="3373000" />
       <workItem from="1686644532980" duration="11460000" />
       <workItem from="1686663121397" duration="3378000" />
-      <workItem from="1686733485312" duration="19650000" />
+      <workItem from="1686733485312" duration="19804000" />
+      <workItem from="1686833445777" duration="1047000" />
+      <workItem from="1687172107190" duration="4220000" />
+      <workItem from="1687207298649" duration="4510000" />
+      <workItem from="1687259016269" duration="236000" />
+      <workItem from="1687262119774" duration="8018000" />
+      <workItem from="1687282000737" duration="13586000" />
+      <workItem from="1687468745368" duration="10660000" />
+      <workItem from="1687517132526" duration="20661000" />
+      <workItem from="1687554934561" duration="14125000" />
+      <workItem from="1687607983310" duration="6396000" />
+      <workItem from="1687641746741" duration="25264000" />
+      <workItem from="1687697194293" duration="35679000" />
+      <workItem from="1687767672391" duration="22726000" />
+      <workItem from="1687794441007" duration="1590000" />
+      <workItem from="1687796134373" duration="211000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1686501464836</created>
@@ -128,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686522668312</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Second commit">
+      <created>1686760174288</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686760174288</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +180,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
   </component>
 </project>

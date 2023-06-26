@@ -28,6 +28,9 @@ public class Suitcase {
         return allowedItems;
     }
 
+    public int getPassengerID() {
+        return passengerID;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -43,6 +46,6 @@ public class Suitcase {
 
     @Override
     public  String toString() {
-        return "Kofer putnika: " + passengerID  +  (allowedItems ? " nema" : " ima") + " nedozvoljene stvari.";
+        return "Kofer putnika: " + passengerID  +  (isAllowedItems() ? " nema" : " ima") + " nedozvoljene stvari.";
     }
 }

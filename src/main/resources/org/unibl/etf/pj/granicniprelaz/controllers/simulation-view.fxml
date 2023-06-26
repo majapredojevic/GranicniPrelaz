@@ -9,10 +9,8 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
@@ -20,7 +18,7 @@
     <children>
         <AnchorPane layoutY="-1.0" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="800.0" style="-fx-background-color: #00308F; -fx-border-color: black;" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="-1.0">
             <children>
-                <Button fx:id="btnRunStop" alignment="CENTER" contentDisplay="CENTER" layoutX="643.0" layoutY="31.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Pokreni/Zaustavi" textAlignment="CENTER" textFill="#00308f" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="31.0">
+                <Button fx:id="btnRunStop" alignment="CENTER" contentDisplay="CENTER" layoutX="643.0" layoutY="31.0" mnemonicParsing="false" onAction="#onBtnRunStopClicked" style="-fx-background-color: white;" text="Pokreni/Zaustavi" textAlignment="CENTER" textFill="#00308f" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="31.0">
                     <font>
                         <Font name="System Bold Italic" size="16.0" />
                     </font>
@@ -32,7 +30,7 @@
                 </Label>
                 <ImageView fitHeight="75.0" fitWidth="95.0" layoutX="68.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="@images/icon.png" />
+                        <Image url="@icon.png" />
                     </image>
                 </ImageView>
             </children>
@@ -51,6 +49,7 @@
                         <Font name="System Bold Italic" size="18.0" />
                     </font>
                 </Label>
+            <Label fx:id="lblTerminalDescription" layoutX="14.0" layoutY="35.0" text="Label" textFill="#00308f" />
             </children></AnchorPane>
         <VBox alignment="CENTER" layoutX="2.0" layoutY="164.0" maxHeight="-Infinity" maxWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="436.0" prefWidth="196.0" style="-fx-border-color: black;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="-1.0" AnchorPane.topAnchor="164.0">
             <children>
@@ -62,31 +61,29 @@
                         <Insets />
                     </VBox.margin>
                 </Label>
-                <ListView fx:id="lvFigures" prefHeight="341.0" prefWidth="185.0" styleClass="list-cell" VBox.vgrow="ALWAYS">
+                <ListView fx:id="lvVehicles" onMouseClicked="#onLvItemClicked" prefHeight="341.0" prefWidth="185.0" styleClass="list-cell" VBox.vgrow="ALWAYS">
                     <VBox.margin>
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                     </VBox.margin>
                 </ListView>
             </children>
         </VBox>
-        <HBox alignment="CENTER" layoutX="196.0" layoutY="165.0" prefHeight="454.0" prefWidth="393.0" AnchorPane.leftAnchor="195.0" AnchorPane.rightAnchor="219.0">
+        <HBox alignment="CENTER" layoutX="196.0" layoutY="165.0" prefHeight="474.0" prefWidth="388.0" AnchorPane.leftAnchor="196.0" AnchorPane.rightAnchor="215.0">
          <children>
-            <VBox alignment="CENTER" prefHeight="454.0" prefWidth="402.0">
+            <VBox alignment="TOP_CENTER" prefHeight="438.0" prefWidth="382.0">
                <children>
-                      <GridPane fx:id="gridPane" alignment="CENTER" prefHeight="346.0" prefWidth="184.0">
-                     <columnConstraints>
-                        <ColumnConstraints />
-                        <ColumnConstraints />
-                     </columnConstraints>
-                     <rowConstraints>
-                        <RowConstraints />
-                        <RowConstraints />
-                     </rowConstraints>
+                   <GridPane fx:id="gpColumnOfVehiclesWithTerminals" alignment="TOP_CENTER" prefHeight="355.0" prefWidth="382.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
                   </GridPane>
-                  <Button fx:id="btnColumnOfVehicles" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="-Infinity" mnemonicParsing="false" onAction="#onBtnColumnOfVehiclesClicked" prefHeight="38.0" prefWidth="221.0" style="-fx-background-color: #00308F;" text="Ostatak kolone vozila" textAlignment="CENTER" textFill="WHITE">
+                  <Button fx:id="btnColumnOfVehicles" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="-Infinity" mnemonicParsing="false" onAction="#onBtnColumnOfVehiclesClicked" prefHeight="38.0" prefWidth="221.0" style="-fx-background-color: #00308F;" text="Ostatak kolone vozila" textAlignment="CENTER" textFill="WHITE" VBox.vgrow="ALWAYS">
                      <font>
                         <Font name="System Bold Italic" size="16.0" />
                      </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
                   </Button>
                </children>
             </VBox>
@@ -94,7 +91,7 @@
         </HBox>
         <HBox alignment="CENTER" layoutY="99.0" prefHeight="66.0" prefWidth="194.5" style="-fx-border-color: transparent;" AnchorPane.leftAnchor="0.0">
          <children>
-                <Button fx:id="btnResults" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" mnemonicParsing="false" prefHeight="38.0" prefWidth="175.0" style="-fx-background-color: #00308F;" text="Registar prekršaja" textAlignment="CENTER" textFill="WHITE">
+                <Button fx:id="btnIncidents" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" mnemonicParsing="false" onAction="#onBtnIncidentsClicked" prefHeight="38.0" prefWidth="175.0" style="-fx-background-color: #00308F;" text="Registar prekršaja" textAlignment="CENTER" textFill="WHITE">
                     <font>
                         <Font name="System Bold Italic" size="16.0" />
                     </font>

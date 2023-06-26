@@ -2,9 +2,10 @@ package org.unibl.etf.pj.granicniprelaz.passenger;
 
 import org.unibl.etf.pj.granicniprelaz.gadgets.IdentificationDocument;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public abstract class Person {
+public abstract class Person implements Serializable {
     private static int identificator = 1;
     private final int ID;
 
@@ -20,6 +21,7 @@ public abstract class Person {
     public int getID() {
         return ID;
     }
+
     public String getName() {
         return name;
     }
@@ -30,10 +32,6 @@ public abstract class Person {
 
     public IdentificationDocument getIdentificationDocument() {
         return identificationDocument;
-    }
-
-    public void setIdentificationDocument(IdentificationDocument identificationDocument) {
-        this.identificationDocument = identificationDocument;
     }
 
     @Override
@@ -51,6 +49,6 @@ public abstract class Person {
 
     @Override
     public String toString() {
-        return "ID: " + ID + ", ime: " + name + ", " + identificationDocument;
+        return "Ime: " + name + ", " + identificationDocument;
     }
 }

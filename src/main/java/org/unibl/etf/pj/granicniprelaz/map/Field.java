@@ -7,25 +7,23 @@ import java.util.Objects;
 
 public class Field {
 
-        private final int xPosition;
-        private final int yPosition;
+    private final int xPosition;
+    private final int yPosition;
 
     private boolean hasTerminal;
     private Terminal terminal;
 
-        private boolean hasVehicle;
-        private Vehicle vehicle;
+    private boolean hasVehicle;
+    private Vehicle vehicle;
 
 
+    public Field(int xPosition, int yPosition) {
+        this.xPosition = xPosition;
+        this.yPosition = yPosition;
 
-
-        public Field(int xPosition, int yPosition) {
-            this.xPosition = xPosition;
-            this.yPosition = yPosition;
-
-            this.hasTerminal = false;
-            this.hasVehicle = false;
-        }
+        this.hasTerminal = false;
+        this.hasVehicle = false;
+    }
 
     public int getXPosition() {
         return xPosition;
@@ -64,6 +62,12 @@ public class Field {
     }
 
     public void setVehicle(Vehicle vehicle) {
-        this.vehicle = vehicle;
+        if (vehicle == null) {
+            this.vehicle = null;
+            this.hasVehicle = false;
+        } else {
+            this.vehicle = vehicle;
+            this.setHasVehicle(true);
+        }
     }
 }

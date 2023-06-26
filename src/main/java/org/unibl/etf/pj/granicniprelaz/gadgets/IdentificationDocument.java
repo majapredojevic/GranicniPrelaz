@@ -1,9 +1,10 @@
 package org.unibl.etf.pj.granicniprelaz.gadgets;
 
+import java.io.Serializable;
 import java.util.Objects;
 import java.util.Random;
 
-public class IdentificationDocument {
+public class IdentificationDocument implements Serializable {
     private static int IdentificationNumber = 1;
     private final int ID;
     private boolean valid;
@@ -15,9 +16,9 @@ public class IdentificationDocument {
         Random rand = new Random();
         int number = rand.nextInt(100);
 
-        if(number < 3) {
+        if (number < 3) {
             this.valid = false;
-        } else  {
+        } else {
             this.valid = true;
         }
     }
@@ -29,6 +30,7 @@ public class IdentificationDocument {
     public boolean isValid() {
         return valid;
     }
+
     public int getID() {
         return ID;
     }
@@ -48,7 +50,7 @@ public class IdentificationDocument {
 
     @Override
     public String toString() {
-        return "Identifikacioni dokument: " + this.ID;
+        return "Dokument: " + this.ID + " je " + (isValid() ? "validan" : "neispravan");
     }
 
 }
